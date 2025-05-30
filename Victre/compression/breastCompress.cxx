@@ -53,6 +53,10 @@ int main(int argc, char *argv[])
   tissue.mass = 200;
   tissue.calc = 250;
   tissue.paddle = 50;
+  tissue.myMat = 41;
+  tissue.myMat2 = 84;
+  tissue.myMat3 = 42;
+  tissue.myMat4 = 69;
 
   // command line parameters
   po::options_description opts("All options");
@@ -1846,8 +1850,8 @@ int main(int argc, char *argv[])
           tetTypes->SetTuple1(i, 6);
           massFound = true;
         }
-        else if (p[0] == tissue.gland || p[0] == tissue.TDLU ||
-                 p[0] == tissue.duct || p[0] == tissue.nipple || p[0] == tissue.cooper || p[0] == tissue.artery || p[0] == tissue.vein)
+        else if (p[0] == tissue.gland || p[0] == tissue.TDLU || p[0] == tissue.myMat || p[0] == tissue.myMat2 || p[0] == tissue.myMat3 || 
+                 p[0] == tissue.myMat4 || p[0] == tissue.duct || p[0] == tissue.nipple || p[0] == tissue.cooper || p[0] == tissue.artery || p[0] == tissue.vein)
         {
           // use gland
           tetTypes->SetTuple1(i, 2);
