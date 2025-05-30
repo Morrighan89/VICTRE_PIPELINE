@@ -28,6 +28,10 @@ typedef struct {
 	unsigned char mass;
 	unsigned char calc;
 	unsigned char paddle;
+	unsigned char myMat;
+	unsigned char myMat2;
+	unsigned char myMat3;
+	unsigned char myMat4;
 } tissueStruct;
 
 
