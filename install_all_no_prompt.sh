@@ -2,12 +2,12 @@
 # UNCOMMENT THESE VARIABLES TO INDICATE CUSTOM PATHS FOR THESE LIBRARIES #
 ##########################################################################
 
- CUDA_INC=/opt/nvidia/hpc_sdk/Linux_x86_64/20.11/cuda/include 
- CUDA_SAMPLES=/home/jovyan/cuda-samples/Common
+ CUDA_INC=/usr/local/cuda-12.4
+ CUDA_SAMPLES=/opt/NVIDIA/cuda-samples/Common
 # MPI_INCLUDE=/usr/include/openmpi
- BOOST_INCLUDE=/usr/include/boost/ # route to boost source code
+ BOOST_INCLUDE=/usr/include/boost # route to boost source code
 # BOOST_OPTIONS_LIB=/usr/lib64 # route to libboost_program_options
- VTK_DIR=/usr/lib/tcltk/vtk-7.1/vtk
+ VTK_DIR=/opt/vtk/vtk-install
 
 # ------------------ DO NOT MODIFY --------------------------
 
