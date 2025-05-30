@@ -1,0 +1,12 @@
+channels:
+  - conda-forge
+dependencies:
+  - h5py
+  - numpy
+  - progressbar2
+  - pydicom
+  - scipy
+  - termcolor
+  - scikit-learn
+
+
