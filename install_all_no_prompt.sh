@@ -141,7 +141,7 @@ The following components will be installed:
         echo "Compiling breast generation"
         rm -rf ./Victre/generation/build 
         mkdir ./Victre/generation/build
-        (cd ./Victre/generation/build && cmake ..)
+        (cd ./Victre/generation/build && cmake -DCMAKE_PREFIX_PATH=$VTK_DIR -DCMAKE_CXX_STANDARD=14 ..)
         (cd ./Victre/generation/build && make)
  #   ;;
     
@@ -149,7 +149,7 @@ The following components will be installed:
         echo "Compiling breast compression"
         rm -rf ./Victre/compression/build 
         mkdir ./Victre/compression/build
-        (cd ./Victre/compression/build && cmake ..)
+        (cd ./Victre/compression/build && cmake -DCMAKE_PREFIX_PATH=$VTK_DIR -DCMAKE_CXX_STANDARD=14 ..)
         (cd ./Victre/compression/build && make)
  #   ;;
 
@@ -157,7 +157,7 @@ The following components will be installed:
         echo "Compiling breast mass"
         rm -rf ./Victre/breastMass/build 
         mkdir ./Victre/breastMass/build
-        (cd ./Victre/breastMass/build && cmake ..)
+        (cd ./Victre/breastMass/build && cmake -DCMAKE_PREFIX_PATH=$VTK_DIR -DCMAKE_CXX_STANDARD=14 ..)
         (cd ./Victre/breastMass/build && make)
  #   ;;
 
