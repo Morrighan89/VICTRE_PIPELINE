@@ -4,7 +4,7 @@
 
  CUDA_INC=/usr/local/cuda-12.4
  CUDA_SAMPLES=/opt/NVIDIA/cuda-samples/Common
- MPI_INCLUDE=/usr/lib/x86_64-linux-gnu/openmpi
+ MPI_INCLUDE=/usr/lib/x86_64-linux-gnu/openmpi/include
  BOOST_INCLUDE=/usr/include/boost # route to boost source code
 # BOOST_OPTIONS_LIB=/usr/lib64 # route to libboost_program_options
  VTK_DIR=/opt/vtk/vtk-install
@@ -142,7 +142,7 @@ The following components will be installed:
         rm -rf ./Victre/generation/build 
         mkdir ./Victre/generation/build
         #(cd ./Victre/generation/build && cmake -DCMAKE_PREFIX_PATH=$VTK_DIR -DCMAKE_CXX_STANDARD=14 ..)
-        (cd ./Victre/compression/build && cmake -DCMAKE_CXX_STANDARD=14 ..)
+        (cd ./Victre/generation/build && cmake -DCMAKE_CXX_STANDARD=14 ..)
         (cd ./Victre/generation/build && make)
  #   ;;
     
@@ -160,7 +160,7 @@ The following components will be installed:
         rm -rf ./Victre/breastMass/build 
         mkdir ./Victre/breastMass/build
         #(cd ./Victre/breastMass/build && cmake -DCMAKE_PREFIX_PATH=$VTK_DIR -DCMAKE_CXX_STANDARD=14 ..)
-        (cd ./Victre/compression/build && cmake -DCMAKE_CXX_STANDARD=14 ..)
+        (cd ./Victre/breastMass/build && cmake -DCMAKE_CXX_STANDARD=14 ..)
         (cd ./Victre/breastMass/build && make)
  #   ;;
 
