@@ -1,7 +1,7 @@
 h5py
 numpy
 progressbar2
-pydicom
+pydicom==2.4.4
 scipy
 termcolor
 scikit-learn
