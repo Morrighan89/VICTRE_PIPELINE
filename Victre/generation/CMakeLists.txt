@@ -15,7 +15,8 @@ endif()
 
 #include_directories("/opt/local/include")
 #include_directories("/usr/local/include")
-include_directories("$(PROJECT_SOURCE_DIR)")
+include_directories("$(PROJECT_SOURCE_DIR)"
+                    "/usr/include/vtk-9.1")
 #include_directories("$(PROJECT_SOURCE_DIR)/vtkPoissonReconstruction")
 
 add_library(perlinNoise perlinNoise.cxx)
